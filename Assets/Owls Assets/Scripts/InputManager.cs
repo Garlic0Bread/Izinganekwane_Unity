@@ -104,7 +104,7 @@ public class InputManager : MonoBehaviour
         playerControls.PlayerActions.Attack.performed += i => LightMelee_1 = true;
         playerControls.PlayerActions.Attack.performed += i => LightMelee_2 = true;
 
-        if (playerManager.joystickMoveVectror.y >= .5f)
+        if (playerManager.joystickMoveVectror.y >= .1f)
         {
             playerAttacker.HandleLightMelee_1(playerInventory.rightHandWeapon);
         }
